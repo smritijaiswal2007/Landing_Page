@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modern SaaS Dashboard</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#F2F3F5;}
+.sidebar{
+width:240px;height:100vh;background:#1E293B;position:fixed;padding-top:30px;
+}
+.sidebar h2{text-align:center;color:#3EB489;}
+.sidebar a{
+display:block;color:#ccc;padding:15px 30px;text-decoration:none;transition:.3s;
+}
+.sidebar a:hover{background:#273449;color:#FF7F6A;padding-left:35px;}
+.topbar{
+margin-left:240px;background:white;height:70px;
+display:flex;justify-content:space-between;align-items:center;
+padding:0 40px;box-shadow:0 3px 12px rgba(0,0,0,.07);
+}
+.logout{
+background:#3EB489;border:none;padding:8px 20px;
+border-radius:8px;color:white;cursor:pointer;
+}
+.content{margin-left:240px;padding:40px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.card{
+background:white;padding:30px;border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+.card h3{margin:0;color:#1E293B;}
+.card p{font-size:26px;margin-top:15px;color:#FF7F6A;font-weight:bold;}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+<h2>Employee</h2>
+<a href="#">Profile</a>
+<a href="#">Salary</a>
+<a href="#">Leave</a>
+<a href="#">All Leave</a>
+<a href="#">Pending Leave</a>
+<a href="#">Work Done</a>
+</div>
+
+<div class="topbar">
+<h3>Welcome Employee</h3>
+<button class="logout">Logout</button>
+</div>
+
+<div class="content">
+<div class="cards">
+<div class="card"><h3>Total Leaves</h3><p>14</p></div>
+<div class="card"><h3>Pending Leaves</h3><p>3</p></div>
+<div class="card"><h3>Attendance</h3><p>97%</p></div>
+<div class="card"><h3>Salary</h3><p>₹60,000</p></div>
+</div>
+</div>
+
+</body>
+</html>

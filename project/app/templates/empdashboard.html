@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Employee Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f4f6f9;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* Header */
+.top-header{
+    background:#2e1f27;  /* Dark plum */
+    color:white;
+    padding:18px 30px;
+}
+
+.logout-btn{
+    background:#4cc9f0;   /* Soft sky */
+    border:none;
+    padding:6px 20px;
+    border-radius:25px;
+    color:#1b1b1b;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.logout-btn:hover{
+    background:#3ab4d9;
+}
+
+/* Sidebar */
+.sidebar{
+    background:#3d2b33;
+    min-height:100vh;
+    padding-top:25px;
+}
+
+.sidebar a{
+    display:block;
+    padding:14px 25px;
+    color:#e4e4e4;
+    text-decoration:none;
+    margin:6px 12px;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.sidebar a:hover{
+    background:#4cc9f0;
+    color:#1b1b1b;
+}
+
+/* Main Content */
+.main-content{
+    padding:40px;
+}
+
+.dashboard-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.dashboard-card h3{
+    color:#2e1f27;
+}
+</style>
+</head>
+<body>
+
+<div class="top-header d-flex justify-content-between align-items-center">
+    <h4 class="m-0">Welcome Employee</h4>
+    <button class="logout-btn">Logout</button>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-2 sidebar">
+            <a href="#">Profile</a>
+            <a href="#">Salary</a>
+            <a href="#">Leave</a>
+            <a href="#">All Leave</a>
+            <a href="#">Pending Leave</a>
+            <a href="#">Work Done</a>
+        </div>
+
+        <div class="col-md-10 main-content">
+            <div class="dashboard-card">
+                <h3>Dashboard Overview</h3>
+                <p>Select any option from sidebar to view details.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
